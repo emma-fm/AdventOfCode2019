@@ -9,5 +9,12 @@ def dump(file):
     d = open(file, "r")
     return d.read()
 
-def dump_list(file):
+def dump_list_newline(file):
     return dump(file).split()
+
+def dump_list_spaces(file):
+    return dump_list_newline(file)
+
+#Note that this won't clear escape characters. However, if parsed to int Python will remove them
+def dump_list_comma(file):
+    return dump(file).split(",")

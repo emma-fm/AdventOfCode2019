@@ -1,6 +1,6 @@
 import inputProcessor as iP
 
-mass_list = iP.dump_list("day1")
+mass_list = iP.dump_list_newline("day1")
 mass_list = [int(i) for i in mass_list]
 totalfuel = 0
 for m in mass_list:
