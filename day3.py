@@ -1,5 +1,4 @@
 import inputProcessor as iP
-import time
 
 def distance_to_origin(element):
     return abs(element[0]) + abs(element[1])
