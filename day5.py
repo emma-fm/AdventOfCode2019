@@ -4,8 +4,6 @@ import inputProcessor as iP
 def calculate(st):
     i = 0
     while i < len(st):
-        if i == 318:
-            print(i)
         # Calculate modes
         opcode = st[i]
         mode = [0,0,0]
