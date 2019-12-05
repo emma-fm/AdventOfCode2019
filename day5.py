@@ -30,7 +30,7 @@ def calculate(st):
             mode[0] = 0
 
         # Calculate parameters for all opcodes but 3 and 99
-        if opcode != 3:
+        if opcode != 3 and opcode != 99:
             for j in range(0,len(parameters)):
                 if mode[j] == 0: # position mode
                     parameters[j] = st[st[i + j + 1]]
