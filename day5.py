@@ -23,9 +23,8 @@ def calculate(st):
             value = int(input("Input: "))
             parameters = [value]
         elif opcode == 4:
-            # Special case. Set mode to address (just in case)
+            # Special case
             parameters = [0]
-            mode[0] = 0
 
         # Calculate parameters for all opcodes but 3 and 99
         if opcode != 3 and opcode != 99:
