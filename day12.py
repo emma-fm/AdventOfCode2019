@@ -1,12 +1,5 @@
 import inputProcessor as iP
 
-def checksum(l):
-    sum1 = sum2 = 0
-    for v in l:
-        sum1 = (sum1 + v) % 255
-        sum2 = (sum2 + sum1) % 255
-    return sum1*256 + sum2
-
 def new_velocity(a, b):
     if a > b:
         return -1
