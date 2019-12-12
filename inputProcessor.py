@@ -10,7 +10,7 @@ def dump(file):
     return d.read()
 
 def dump_list_newline(file):
-    return dump(file).split()
+    return dump(file).split("\n")
 
 def dump_list_spaces(file):
     return dump_list_newline(file)
