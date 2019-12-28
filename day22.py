@@ -59,3 +59,5 @@ for a in actions:
         increment(a[1],deck)
 
 print("Position of card 2019: ", deck.index(2019))
+
+# PART 2 NOT DONE

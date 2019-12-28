@@ -89,3 +89,5 @@ for b in bugs:
     bio = bio + pow(2, 5 * b[1] + b[0])
 
 print("\nBiodiversity rating: ", bio)
+
+# PART 2 NOT DONE

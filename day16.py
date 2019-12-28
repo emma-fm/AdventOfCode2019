@@ -11,7 +11,6 @@ input_signal = iP.dump("day16")
 input_signal = [int(x) for x in input_signal.replace("\n","")]
 
 offset = input_signal.copy()
-'''
 for i in range(0,100):
     new = []
     for j in range(0,len(offset)):
@@ -30,31 +29,5 @@ for i in range(0,100):
     offset = new.copy()
 
 print("First 8 values of result list: ", offset[0:8])
-'''
-new_input = input_signal.copy()
 
-for i in range(0,10000):
-    new_input.extend(input_signal)
-
-result_offset = new_input[0:7]
-
-offset = new_input
-
-for i in range(0,100):
-    new = []
-    for j in range(0,len(offset)):
-        p = 1 # Pattern index to apply
-        pattern = repeat_pattern([0,1,0,-1], j + 1)
-        tmp = []
-        for o in offset:
-            tmp.append(o * pattern[p])
-            p = p + 1
-            if p == len(pattern):
-                p = 0
-        value = abs(sum(tmp))
-        if value % 10 != value:
-            value = value % 10
-        new.append(value)
-    offset = new.copy()
-
-print("8 digit message: ", offset[result_offset:result_offset + 8])
+# PART 2 NOT DONE

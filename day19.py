@@ -141,26 +141,4 @@ for x in range(0,50):
 
 print("Points affected by the beam: ", len(points))
 
-# Calculate a 200 x 200 area. Then check all points to see if it fits there.
-# If it doesn't calculate a 300x300 area and so on.
-
-mini = 50
-maxi = 200
-while True:
-    check_area(mini, maxi, og_states, points)
-    for p in points:
-        keep_checking = True
-        for x in range(0,100):
-            for y in range(0,100):
-                keep_checking = (p[0] + x, p[1] + y) in points
-                if not keep_checking:
-                    break
-            if not keep_checking:
-                break
-        if keep_checking:
-            # We're good
-            print("Our point is ", p, ". Puzzle value: ", p[0] * 10000 + p[1])
-            quit()
-    # No point is good. Increase range
-    mini = maxi
-    maxi = maxi + 100
+# PART 2 NOT DONE

@@ -105,4 +105,4 @@ for phase in range(1234,43211): #01234 is the lowest sequence, 43210 the highest
 
 print("Highest signal sent: ", maxi)
 
-#### PART 2 IS NOT COMPLETED (YET?) ####
+# PART 2 NOT DONE

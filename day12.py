@@ -64,32 +64,4 @@ for i in range(0, 4):
 
 print("Total energy: ", total)
 
-position = original_position
-velocity = [(0,0,0),(0,0,0),(0,0,0),(0,0,0)]
-hashes = []
-
-steps = 0
-while True:
-    # New velocity
-    for i in range(0,4):
-        for j in range(0,4):
-            if i != j:
-                x = velocity[i][0] + new_velocity(position[i][0], position[j][0])
-                y = velocity[i][1] + new_velocity(position[i][1], position[j][1])
-                z = velocity[i][2] + new_velocity(position[i][2], position[j][2])
-
-                velocity[i] = (x,y,z)
-    
-    # New position
-    for i in range(0,4):
-        position[i] = add(position[i],velocity[i]) 
-    
-    steps = steps + 1
-
-    h = (hash(tuple(position)),hash(tuple(velocity)))
-    if h in hashes:
-        break
-    else:
-        hashes.append(h)
-
-print("Steps to return to previous state: ", steps)
+# PART 2 NOT DONE
